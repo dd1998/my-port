@@ -1,6 +1,14 @@
 
 /* ซ่อนเคอร์เซอร์เริ่มต้น */
 
+/* App.css */
+.App {
+  min-height: 100vh; /* ให้เต็มความสูงหน้าจอ */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* วางเนื้อหาจากด้านบน */
+  overflow: hidden; /* ป้องกันการเลื่อนหน้าจอ */
+}
 
 
 /* สไตล์วงกลมของเคอร์เซอร์ */
