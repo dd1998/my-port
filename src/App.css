@@ -1,0 +1,154 @@
+
+/* ซ่อนเคอร์เซอร์เริ่มต้น */
+
+
+
+/* สไตล์วงกลมของเคอร์เซอร์ */
+#custom-cursor {
+  width: 20px; /* ขนาดของวงกลม */
+  height: 20px;
+  border: 2px solid #000; /* เส้นขอบของวงกลม */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+  position: fixed;
+  pointer-events: none; /* ไม่รบกวนการคลิก */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease; /* เพิ่มเอฟเฟกต์นุ่มนวล */
+  z-index: 9999; /* ให้อยู่เหนือทุกอย่าง */
+  background-color: aliceblue;
+}
+.bg_1{
+  background-color: black;  
+  height: 100%;
+  width: 100%;
+}
+
+
+.font_1 {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font_2 {
+  font-family: "Lilita One", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.font_3 {
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.backlight{
+  text-shadow: 10px 3px 5px rgba(128, 0, 128, 0.7); /* สีม่วงเกือบดำ */
+}
+
+
+.nav_position{
+  position: relative;
+  top: 20px;
+}
+
+.typewriter {
+  font-size: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  width: 0;
+  animation: typing 15s steps(50, end) infinite, blink 0.7s step-end infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%; /* แสดงข้อความเต็ม */
+  }
+  75% {
+    width: 100%; /* ค้างไว้ 3 วินาที */
+  }
+  100% {
+    width: 0; /* กลับไปเริ่มใหม่ */
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    border-right-color: #fff;
+  }
+  50%, 100% {
+    border-right-color: transparent;
+  }
+}
+.social-link {
+  text-decoration: none; /* ลบเส้นใต้ */
+  cursor: pointer; /* ใช้เคอร์เซอร์เริ่มต้น */
+  color: #fff; /* สีของไอคอน */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon {
+  font-size: 2rem; /* ขนาดของไอคอน */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.2); /* ขยายไอคอนเมื่อ hover */
+  color: #6c63ff; /* เปลี่ยนสีไอคอนเมื่อ hover */
+}
+.custom-button {
+  background-color: black; /* พื้นหลังสีดำ */
+  color: white; /* ข้อความสีขาว */
+  border: 2px solid rgba(112, 0, 255, 1); /* ขอบสีม่วง */
+  border-radius: 15px; /* ขอบมน */
+  padding: 10px 20px; /* ขนาดปุ่ม */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  transition: all 0.3s ease; /* เอฟเฟกต์เปลี่ยนแปลง */
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: rgba(128, 0, 128, 0.1); /* พื้นหลังม่วงอ่อนเมื่อ hover */
+  border-color: rgba(128, 0, 128, 1); /* ขอบม่วงเข้มเมื่อ hover */
+  
+}
+
+
+.gif {
+  position: absolute;
+  top: 140%; /* หรือใช้ค่าอื่นๆ ตามที่ต้องการ */
+  right: 10px; /* ปรับระยะห่างจากขอบขวา */
+  transform: translateY(-50%); /* เพื่อให้ GIF อยู่กึ่งกลางแนวตั้ง */
+}
+@media (max-width: 1280px) {
+  .gifhide {
+    display: none;
+  }
+}
+
+
+
+/* สำหรับหน้าจอขนาดเล็ก (Mobile) */
+@media (max-width: 767.98px) {
+h1.font_2 {
+font-size: 40px !important; /* ปรับขนาดฟอนต์ให้เล็กลง */
+}
+
+.card {
+margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างการ์ด */
+}
+}
+
+/* สำหรับหน้าจอขนาดกลาง (Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+h1.font_2 {
+font-size: 50px !important;
+}
+}
